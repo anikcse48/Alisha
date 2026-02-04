@@ -27,7 +27,7 @@ import twoPieceImg from '../assets/categories/two-piece.jpg';
 import kaftanImg from '../assets/categories/kaftan.jpg';
 
 
-const womenCategories = [
+const kidsCategories = [
   { id: 'w1', title: 'Saree', image: sareeImg, filter: 'Saree' },
   { id: 'w2', title: 'Tops', image: topsImg, filter: 'Tops' },
   { id: 'w3', title: 'Kurti', image: kurtiImg, filter: 'Kurti' },
@@ -46,7 +46,7 @@ const womenCategories = [
 
 
 
-export default function WomenCategoriesGrid({ navigation }) {
+export default function KidsCategoriesGrid({ navigation }) {
   const { width } = useWindowDimensions();
 
   const isMobile = width < 768;
@@ -60,7 +60,7 @@ export default function WomenCategoriesGrid({ navigation }) {
   return (
     <ScrollView contentContainerStyle={{ padding: gap }}>
       <View style={styles.grid}>
-        {womenCategories.map((item) => (
+        {kidsCategories.map((item) => (
           <TouchableOpacity
             key={item.id}
             style={[
@@ -69,7 +69,7 @@ export default function WomenCategoriesGrid({ navigation }) {
             ]}
             onPress={() =>
               navigation.navigate('ProductList', {
-                category: 'Women',
+                category: 'Kids',
                 subCategory: item.filter,
               })
             }
