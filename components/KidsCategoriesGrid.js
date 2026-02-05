@@ -52,7 +52,7 @@ export default function KidsCategoriesGrid({ navigation }) {
   const isMobile = width < 768;
   const isTablet = width >= 768 && width < 1200;
 
-  const numColumns = isMobile ? 5 : isTablet ? 4 : 5;
+  const numColumns = isMobile ? 3 : isTablet ? 4 : 5;
   const gap = 10;
   const cardWidth = (width - gap * (numColumns + 1)) / numColumns;
   const cardHeight = cardWidth * 1.25;

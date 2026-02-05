@@ -123,8 +123,8 @@ export default function Footer() {
 
       {/* ===== BOTTOM ===== */}
       <View style={styles.bottomSection}>
-        <Text style={{ color: '#232222', fontWeight: '600' }}>
-          © Alisha_আঁচল 2025
+        <Text style={{ color: '#472424', fontWeight: '300', textAlign: 'center', fontSize: 14, fontFamily: 'serif', }}>
+          © 2025 Alisha_আঁচল - All right reserved | Designed & Developed by Rk Anik| privacy policy & cookies | terms & conditions
         </Text>
       </View>
 
@@ -271,9 +271,11 @@ submitText: {
   },
 
   /* Bottom */
-  bottomSection: {
+ bottomSection: {
     backgroundColor: '#fffcfc',
     paddingVertical: 12,
     alignItems: 'center',
+    justifyContent: 'center',
   },
+  
 });
