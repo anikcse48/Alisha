@@ -57,7 +57,7 @@ function Header({ title, navigation }) {
 
   {/* CENTER LOGO */}
   <View style={styles.center}>
-    <Image source={require('./assets/logoa.png')} style={styles.logo} />
+    <Image source={require('./assets/logoaa.png')} style={styles.logo} />
   </View>
 
   {/* RIGHT ICONS */}
@@ -137,7 +137,7 @@ function CustomDrawerContent({ navigation }) {
       {/* Logo Top */}
       <View style={{ padding: 20 }}>
         <Image
-          source={require('./assets/logoa.png')}
+          source={require('./assets/logoaa.png')}
           style={{ width: 100, height: 100, resizeMode: 'contain' }}
         />
       </View>
@@ -426,7 +426,7 @@ const styles = StyleSheet.create({
 
   logoContainer: { flexDirection: 'row', alignItems: 'center', gap: 8 },
 
-  logo: { width: 60, height: 60 },
+  logo: { width: 100, height: 100 },
 
   drawerItem: {
     paddingVertical: 14,
